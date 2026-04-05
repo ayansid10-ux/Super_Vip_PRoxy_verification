@@ -1,25 +1,186 @@
-<div class="card">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Fire Access</title>
 
-    <div class="row">
-        <!-- LEFT IMAGE -->
-        <img src="https://i.imgur.com/7yUvePI.png" class="icon">
+<style>
+body{
+    margin:0;
+    background:#0f0f0f;
+    font-family:Arial;
+    color:#fff;
+}
 
-        <!-- RIGHT CONTENT -->
-        <div class="content">
+/* TOP BAR */
+.top{
+    background:linear-gradient(90deg,#87c9e8,#5aa7d9);
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+}
 
-            <div class="badges">
-                <span class="badge new">NEW</span>
-                <span class="badge premium">PREMIUM</span>
-            </div>
+/* TITLE */
+.title{
+    text-align:center;
+    margin:20px 0;
+    font-size:22px;
+}
 
-            <div class="name">Proxy Server 2.0</div>
-            <div class="desc">FREE FIRE PROXY SERVER UNLIMITED ACCESS</div>
+/* VIDEO */
+.video-wrap{
+    display:flex;
+    justify-content:center;
+}
 
-            <div class="stars">★★★★★</div>
+.video-box{
+    width:92%;
+    max-width:360px;
+    background:#000;
+    border-radius:18px;
+    overflow:hidden;
+}
 
-        </div>
+video{
+    width:100%;
+    display:block;
+}
+
+/* CARD */
+.card-area{
+    display:flex;
+    justify-content:center;
+    margin-top:25px;
+    padding:0 15px 40px;
+}
+
+.card{
+    width:100%;
+    max-width:360px;
+    background:#1a1a1a;
+    border-radius:25px;
+    padding:20px;
+    position:relative;
+}
+
+/* GLOW BORDER */
+.card:before{
+    content:"";
+    position:absolute;
+    inset:-3px;
+    border-radius:28px;
+    background:linear-gradient(45deg, red, orange, yellow, green, cyan, blue, purple, red);
+    z-index:-1;
+    filter:blur(12px);
+}
+
+/* ROW (IMAGE LEFT TEXT RIGHT) */
+.row{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+/* ICON */
+.icon{
+    width:75px;
+    border-radius:15px;
+}
+
+/* CONTENT */
+.content{
+    text-align:left;
+}
+
+.badges{
+    margin-bottom:5px;
+}
+
+.badge{
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    margin-right:5px;
+}
+
+.new{background:#ff2b2b;}
+.premium{background:#7a2bff;}
+
+.name{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.desc{
+    font-size:13px;
+    color:#bbb;
+}
+
+.stars{
+    color:gold;
+    margin-top:5px;
+}
+
+/* BUTTON */
+.install{
+    display:block;
+    margin-top:20px;
+    text-align:center;
+    background:#16c95f;
+    padding:16px;
+    border-radius:35px;
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+/* CLICK EFFECT */
+.install:active{
+    transform:scale(0.96);
+    background:#12a94f;
+}
+</style>
+</head>
+
+<body>
+
+<div class="top">Garena Free Fire Team</div>
+
+<div class="title">WATCH FULL VIDEO</div>
+
+<div class="video-wrap">
+    <div class="video-box">
+        <video autoplay muted loop controls>
+            <source src="YOUR_VIDEO_LINK.mp4" type="video/mp4">
+        </video>
     </div>
-
-    <a href="YOUR_LINK_HERE" class="install">⬇ Install</a>
-
 </div>
+
+<div class="card-area">
+    <div class="card">
+
+        <div class="row">
+            <img src="https://i.imgur.com/7yUvePI.png" class="icon">
+
+            <div class="content">
+                <div class="badges">
+                    <span class="badge new">NEW</span>
+                    <span class="badge premium">PREMIUM</span>
+                </div>
+
+                <div class="name">Proxy Server 2.0</div>
+                <div class="desc">FREE FIRE PROXY SERVER UNLIMITED ACCESS</div>
+
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+
+        <a href="YOUR_LINK_HERE" class="install">⬇ Install</a>
+
+    </div>
+</div>
+
+</body>
+</html>
