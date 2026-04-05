@@ -15,29 +15,32 @@ body{
 /* TOP BAR */
 .top{
     background:linear-gradient(90deg,#87c9e8,#5aa7d9);
-    padding:15px;
+    padding:18px;
     text-align:center;
     font-weight:bold;
+    font-size:20px; /* bigger text */
 }
 
 /* TITLE */
 .title{
     text-align:center;
-    margin:20px 0;
+    margin:25px 0 20px;
     font-size:22px;
+    letter-spacing:1px;
 }
 
 /* VIDEO */
 .video-wrap{
     display:flex;
     justify-content:center;
+    margin-bottom:30px; /* GAP increase */
 }
 
 .video-box{
     width:92%;
     max-width:360px;
     background:#000;
-    border-radius:18px;
+    border-radius:20px;
     overflow:hidden;
 }
 
@@ -50,8 +53,7 @@ video{
 .card-area{
     display:flex;
     justify-content:center;
-    margin-top:25px;
-    padding:0 15px 40px;
+    padding:0 18px 40px;
 }
 
 .card{
@@ -59,7 +61,7 @@ video{
     max-width:360px;
     background:#1a1a1a;
     border-radius:25px;
-    padding:20px;
+    padding:22px;
     position:relative;
 }
 
@@ -136,10 +138,17 @@ video{
     transition:0.2s;
 }
 
-/* CLICK EFFECT */
 .install:active{
     transform:scale(0.96);
     background:#12a94f;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    font-size:12px;
+    color:#888;
+    padding-bottom:15px;
 }
 </style>
 </head>
@@ -181,6 +190,8 @@ video{
 
     </div>
 </div>
+
+<div class="footer">Subscribe to Gamer Ayan</div>
 
 </body>
 </html>
