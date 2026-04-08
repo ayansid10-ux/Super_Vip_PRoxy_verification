@@ -12,6 +12,7 @@ body{
     color:#fff;
 }
 
+/* TOP BAR */
 .top{
     background:linear-gradient(90deg,#87c9e8,#5aa7d9);
     padding:18px;
@@ -20,6 +21,7 @@ body{
     font-size:20px;
 }
 
+/* TITLE */
 .title{
     text-align:center;
     margin:25px 0 20px;
@@ -27,6 +29,7 @@ body{
     letter-spacing:1px;
 }
 
+/* VIDEO */
 .video-wrap{
     display:flex;
     justify-content:center;
@@ -46,6 +49,7 @@ video{
     display:block;
 }
 
+/* CARD */
 .card-area{
     display:flex;
     justify-content:center;
@@ -61,6 +65,7 @@ video{
     position:relative;
 }
 
+/* GLOW BORDER */
 .card:before{
     content:"";
     position:absolute;
@@ -71,6 +76,7 @@ video{
     filter:blur(12px);
 }
 
+/* ROW */
 .row{
     display:flex;
     gap:15px;
@@ -115,6 +121,7 @@ video{
     margin-top:5px;
 }
 
+/* BUTTON */
 .install{
     display:block;
     margin-top:20px;
@@ -135,6 +142,7 @@ video{
     background:#12a94f;
 }
 
+/* FOOTER */
 .footer{
     text-align:center;
     font-size:12px;
@@ -160,6 +168,7 @@ video{
 
 <div class="card-area">
     <div class="card">
+
         <div class="row">
             <img src="image.jpg" class="icon">
 
@@ -176,22 +185,18 @@ video{
             </div>
         </div>
 
-        <a href="https://aff.earnsiozone.in/click/u/87/o/7" class="install">⬇ Install</a>
+        <a href="https://aff.earnsiozone.in/click/u/87/o/9" class="install">⬇ Install</a>
+
     </div>
 </div>
 
 <div class="footer">Subscribe to Gamer Ayan</div>
 
 <script>
-let unmuted = false;
-
-document.addEventListener('click', function() {
-    if (!unmuted) {
-        const video = document.getElementById('promoVideo');
-        video.muted = false;
-        video.play();
-        unmuted = true;
-    }
+document.addEventListener('click', function () {
+    const video = document.getElementById('promoVideo');
+    video.muted = false;
+    video.play();
 }, { once: true });
 </script>
 
